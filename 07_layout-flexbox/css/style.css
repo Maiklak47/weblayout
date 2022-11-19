@@ -154,7 +154,7 @@ body {
   padding: 200px 30px 30px 30px;
   margin-bottom: 24px;
   width: 550px;
-  height: 330px;
+  min-height: 330px;
   outline: 1px solid crimson;
 }
 
@@ -178,7 +178,7 @@ body {
   margin-right: 22px;
   margin-bottom: 22px;
   width: 276px;
-  height: 276px;
+  min-height: 276px;
   outline: 1px solid crimson;
 }
 
@@ -200,7 +200,7 @@ body {
 
 .list-accommodation {
   width: 374px;
-  height: 440px;
+  min-height: 440px;
   margin-right: 22px;
   margin-bottom: 22px;
   outline: 1px solid crimson;
