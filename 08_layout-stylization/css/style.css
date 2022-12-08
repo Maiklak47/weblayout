@@ -257,7 +257,7 @@ body {
   font-size: 16px;
   line-height: 200%;
   color: #000000;
-  width: 888px;
+  max-width: 888px;
   height: 192px;
 }
 
@@ -335,7 +335,6 @@ body {
 }
 
 .adv-text {
-  max-width: 189px;
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
@@ -374,10 +373,11 @@ body {
 
 .list-accommodation {
   width: 374px;
-  min-height: 440px;
+  max-height: 440px;
   margin-right: 22px;
   margin-bottom: 22px;
   background: #FFFFFF;
+  overflow: hidden;
   border-radius: 15px;
 }
 
@@ -433,7 +433,7 @@ body {
 }
 
 .number {
-  display: inline;
+  display: inline-block;
   padding: 13px 20px;
   font-weight: 400;
   font-size: 16px;
