@@ -92,7 +92,7 @@ body {
 
 .header-section {
   margin-bottom: 20px;
-  margin-left: 40px;
+  padding-left: 40px;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -457,10 +457,10 @@ body {
 }
 
 .all-var {
-display: flex;
-align-items: flex-end;
-padding: 27px;
-justify-content: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 27px;
+  justify-content: center;
 }
 
 /* tour */
@@ -479,7 +479,7 @@ justify-content: center;
 
 .tour-text {
   display: block;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -621,9 +621,13 @@ opacity: 1;
 }
 
 /* footer */
+
 .footer {
+  padding-bottom: 30px;
+}
+
+.footer-block {
   padding: 45px;
-  margin-bottom: 30px;
   background-color: #333333;
   border-radius: 15px;
   background-image: url(../img/Frame\ 11.svg);
