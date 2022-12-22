@@ -70,7 +70,7 @@ body {
 
 .container-header {
   align-items: center;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .header-logo {
@@ -186,7 +186,7 @@ body {
   margin-bottom: 0;
 }
 
-.card-advantages-item:nth-child(4n+4) {
+.card-advantages-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -215,6 +215,5 @@ body {
 }
 
 .article-accommodation {
-  padding-left: 45px;
-  padding-top: 32px;
+  padding: 45px 32px;
 }
