@@ -19,8 +19,8 @@ img {
 
 @font-face {
   font-family: "Muller";
-  src: local("MullerRegular"), url(../fonts/MullerRegular.woff2) format(woff2);
-  src: local("MullerRegular"), url(../fonts/MullerRegular.woff) format(woff);
+  src: url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -28,17 +28,8 @@ img {
 
 @font-face {
   font-family: "Muller";
-  src: local("MullerLight"), url(../fonts/MullerLight.woff2) format(woff2);
-  src: local("MullerLight"), url(../fonts/MullerLight.woff) format(woff);
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Muller";
-  src: local("MullerBold"), url(../fonts/MullerBold.woff2) format(woff2);
-  src: local("MullerBold"), url(../fonts/MullerBold.woff) format(woff);
+  src: url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -46,16 +37,25 @@ img {
 
 @font-face {
   font-family: "Muller";
-  src: local("MullerMedium"), url(../fonts/MullerMedium.woff2) format(woff2);
-  src: local("MullerMedium"), url(../fonts/MullerMedium.woff2) format(woff);
-  font-weight: 600;
+  src: url("../fonts/MullerLight.woff2") format("woff2"),
+    url("../fonts/MullerLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 body {
   min-width: 1220px;
-  font-family: 'Muller', sans-serif;
+  font-family: "Muller", "sans-serif";
   font-weight: 400;
   background: #E5E5E5;
 }
@@ -73,11 +73,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-body {
-  min-width: 1220px;
-  font-family: 'font', sans-serif;
 }
 
 .list-reset {
@@ -112,13 +107,13 @@ body {
   color: #CC9933;
   border: 1px solid #CC9933;
   border-radius: 10px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .btn:focus {
   background-color: #CC9933;
   color: #FFFFFF;
   border: 1px solid #CC9933;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .btn:focus-visible {
@@ -128,13 +123,11 @@ body {
 .btn:hover {
   background-color: #CC9933;
   color: #FFFFFF;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 .btn:active {
   background-color: #A47312;
   color: #FFFFFF;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
 :root {
@@ -169,6 +162,7 @@ body {
 
 .personal-area svg {
   fill: #CC9933;
+  transition: fill 0.3s ease-in-out;
 }
 
 .personal-area {
@@ -177,54 +171,51 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: #CC9933;
+  transition: color 0.3s ease-in-out;
 }
 
 .personal-area:focus {
   color: #CC9933;
-  outline: 1px solid #CC9933;
   outline-offset: 5px;
-  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out, transform 0.3s ease-in-out;
+  outline: 1px solid #CC9933;
 }
 
 .personal-area:hover {
   color: #F0BF5F;
-  transition: color 0.3s ease-in-out;
 }
 
 .personal-area:hover svg {
   fill: #F0BF5F;
-  transition: fill 0.3s ease-in-out;
 }
 
 .personal-area:active {
   color: #A47312;
-  transition: color 0.3s ease-in-out;
 }
 
 .personal-area:active svg {
   fill: #A47312;
-  transition: fill 0.3s ease-in-out;
 }
 
 .header-list-item:not(:last-child){
   margin-right: 45px;
 }
 
+.header-linc {
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
 .header-linc:focus {
   color: #CC9933;
   outline: 1px solid #CC9933;
   outline-offset: 5px;
-  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .header-linc:hover {
   color: #CC9933;
-  transition: color 0.3s ease-in-out;
 }
 
 .header-linc:active {
   color: #A47312;
-  transition: color 0.3s ease-in-out;
 }
 
 .container-nav {
@@ -244,24 +235,22 @@ body {
   font-size: 20px;
   line-height: 20px;
   color: #666666;
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .contact-tel:focus {
   color: #CC9933;
   outline: 1px solid #CC9933;
   outline-offset: 5px;
-  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .contact-tel:hover {
   color: #CC9933;
-  transition: color 0.3s ease-in-out;
 }
 
 .contact-tel:active {
   outline: none;
   color: #A47312;
-  transition: color 0.3s ease-in-out;
 }
 
 /* main */
@@ -320,8 +309,12 @@ body {
 .card_3 {
   background-repeat: no-repeat;
   background-position: center;
-  background: url(../img/Lux.jpg);
+  background: linear-gradient(to top, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/Lux.jpg);
   border-radius: 15px;
+}
+
+.card_1, .card_2, .card_3 {
+  background-size: cover;
 }
 
 .title-card-special {
@@ -345,6 +338,7 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: #F0BF5F;
+  transition: color 0.3s ease-in-out;
 }
 
 .special-more:focus::after {
@@ -356,11 +350,12 @@ body {
   top: 0;
   outline: 1px solid #CC9933;
   outline-offset: 5px;
-  transition: outline-offset 0.3s ease-in-out, outline 0.3s ease-in-out;
+  /* transition: outline-offset 0.3s ease-in-out, outline 0.3s ease-in-out; */
 }
 
-.special-more:focus-visible {
+.special-more:focus {
   outline: none;
+
 }
 
 .special-more:hover .strelka {
@@ -370,7 +365,8 @@ body {
 
 .special-more:active {
   color: #FFFFFF;
-  transition: color 0.3s ease-in-out;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .about-Us-text {
@@ -427,10 +423,18 @@ body {
 }
 
 .services-different {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
   color: #CC9933;
+  transition: outline-offset 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.service-strelka {
+  stroke: #CC9933;
+  transform: translateX(5px);
 }
 
 .services-different:focus::after {
@@ -445,16 +449,26 @@ body {
   transition: outline-offset 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
-.services-different:hover .strelka{
-  transform: translateX(10px);
-  transition: transform 0.3s ease-in-out;
+.services-different:focus-visible {
+  outline: none;
+}
+
+.services-different:hover {
   color: #F0BF5F;
 }
 
+.services-different:hover .service-strelka {
+  stroke: #F0BF5F;
+  transform: translateX(10px);
+  transition: stroke 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
 .services-different:active {
-  outline: none;
   color: #A47312;
-  transition: color 0.3s ease-in-out;
+}
+
+.services-different:active .service-strelka {
+  stroke: #A47312;
 }
 
 .list-ser-text {
@@ -630,12 +644,6 @@ body {
   height: 100%;
 }
 
-/* .all-var {
-  display: flex;
-  align-items: flex-end;
-  padding: 27px;
-  justify-content: center;
-} */
 
 /* tour */
 
@@ -708,6 +716,7 @@ opacity: 1;
   background-position: right;
   background-repeat: no-repeat;
   align-items: center;
+  cursor: pointer;
 }
 
 .btn-tour {
@@ -767,6 +776,7 @@ opacity: 1;
   font-size: 16px;
   line-height: 150%;
   color: #CC9933;
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 
 .site-link {
@@ -774,24 +784,23 @@ opacity: 1;
   font-size: 16px;
   line-height: 150%;
   color: #CC9933;
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 
 .site-link:focus, .contacts-number:focus {
   color: #CC9933;
   outline: 1px solid #CC9933;
   outline-offset: 2px;
-  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out, width 0.3s ease-in-out;
+
 }
 
 .site-link:hover, .contacts-number:hover {
   color: #F0BF5F;
-  transition: color 0.3s ease-in-out;
 }
 
 .site-link:active, .contacts-number:active {
   outline: none;
   color: #A47312;
-  transition: color 0.3s ease-in-out;
 }
 
 .contacts-wrapper {
@@ -845,10 +854,6 @@ opacity: 1;
   max-width: 25px;
 }
 
-/* .footer-elem:not(:last-child) {
-  margin-bottom: 20px;
-} */
-
 .elem-descr {
   margin: 0;
   font-weight: 400;
@@ -879,35 +884,30 @@ opacity: 1;
 
 .elem-link-social {
   display: flex;
+  transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 
 .elem-link-social svg {
   fill: #999999;
+  transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 
 .elem-link-social:focus svg {
   fill: #CC9933;
   background-color: #fff;
   border-radius: 20px;
-  transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
-
-/* .elem-link-social:focus-visible {
-  outline: none;
-} */
 
 .elem-link-social:hover svg {
   fill: #CC9933;
   background-color: #fff;
   border-radius: 20px;
-  transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 
 .elem-link-social:active svg {
   fill: #A47312;
   background-color: #fff;
   border-radius: 20px;
-  transition: background-color 0.3s ease-in-out, fill 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 
 .elem-link {
@@ -916,4 +916,20 @@ opacity: 1;
   font-size: 16px;
   line-height: 150%;
   color: #cc9933;
+  transition: color 0.3s ease-in-out;
+}
+
+.elem-link:focus {
+  color: #CC9933;
+  outline: 1px solid #CC9933;
+  outline-offset: 5px;
+}
+
+.elem-link:hover {
+  color: #F0BF5F;
+}
+
+.elem-link:active {
+  outline: none;
+  color: #A47312;
 }
