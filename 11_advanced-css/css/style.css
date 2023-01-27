@@ -107,7 +107,7 @@ body {
   color: #CC9933;
   border: 1px solid #CC9933;
   border-radius: 10px;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .btn:focus {
@@ -190,6 +190,8 @@ body {
 
 .personal-area:active {
   color: #A47312;
+  outline-offset: 0;
+  outline: 0;
 }
 
 .personal-area:active svg {
@@ -201,7 +203,7 @@ body {
 }
 
 .header-linc {
-  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .header-linc:focus {
@@ -216,6 +218,8 @@ body {
 
 .header-linc:active {
   color: #A47312;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .container-nav {
@@ -235,7 +239,7 @@ body {
   font-size: 20px;
   line-height: 20px;
   color: #666666;
-  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .contact-tel:focus {
@@ -251,6 +255,7 @@ body {
 .contact-tel:active {
   outline: none;
   color: #A47312;
+  outline-offset: 0;
 }
 
 /* main */
@@ -338,7 +343,7 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: #F0BF5F;
-  transition: color 0.3s ease-in-out;
+  transition: outline-offset 0.3s ease-in-out;
 }
 
 .special-more:focus::after {
@@ -350,12 +355,10 @@ body {
   top: 0;
   outline: 1px solid #CC9933;
   outline-offset: 5px;
-  /* transition: outline-offset 0.3s ease-in-out, outline 0.3s ease-in-out; */
 }
 
 .special-more:focus {
   outline: none;
-
 }
 
 .special-more:hover .strelka {
@@ -429,7 +432,7 @@ body {
   font-size: 20px;
   line-height: 200%;
   color: #CC9933;
-  transition: outline-offset 0.3s ease-in-out, outline 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .service-strelka {
@@ -446,7 +449,6 @@ body {
   height: 100%;
   outline: 1px solid #CC9933;
   outline-offset: 5px;
-  transition: outline-offset 0.3s ease-in-out, outline 0.3s ease-in-out;
 }
 
 .services-different:focus-visible {
@@ -458,13 +460,14 @@ body {
 }
 
 .services-different:hover .service-strelka {
-  stroke: #F0BF5F;
   transform: translateX(10px);
-  transition: stroke 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .services-different:active {
   color: #A47312;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .services-different:active .service-strelka {
@@ -600,10 +603,17 @@ body {
   color: #CC9933;
   border: 1px solid #CC9933;
   border-radius: 10px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-.number:focus::after {
-  opacity: 1;
+.number:focus {
+  background-color: #CC9933;
+  color: #FFFFFF;
+  border: 1px solid #CC9933;
+}
+
+.number:focus-visible {
+  outline: none;
 }
 
 .number:hover {
@@ -642,6 +652,30 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.all-var:focus-within {
+  outline: 1px solid #CC9933;
+  outline-offset: 5px;
+}
+
+.all-variant:hover .strelka {
+  transform: translateX(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.all-variant:focus-visible {
+  outline: none;
+}
+
+.all-variant:hover {
+  color: #F0BF5F;
+}
+
+.all-variant:active, .all-var:active {
+  color: #A47312;
+  outline: 0;
+  outline-offset: 0;
 }
 
 
@@ -776,7 +810,7 @@ opacity: 1;
   font-size: 16px;
   line-height: 150%;
   color: #CC9933;
-  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out, width 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .site-link {
@@ -784,7 +818,7 @@ opacity: 1;
   font-size: 16px;
   line-height: 150%;
   color: #CC9933;
-  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out, width 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .site-link:focus, .contacts-number:focus {
@@ -799,8 +833,9 @@ opacity: 1;
 }
 
 .site-link:active, .contacts-number:active {
-  outline: none;
+  outline: 0;
   color: #A47312;
+  outline-offset: 0;
 }
 
 .contacts-wrapper {
@@ -906,8 +941,6 @@ opacity: 1;
 
 .elem-link-social:active svg {
   fill: #A47312;
-  background-color: #fff;
-  border-radius: 20px;
 }
 
 .elem-link {
@@ -930,6 +963,7 @@ opacity: 1;
 }
 
 .elem-link:active {
-  outline: none;
+  outline: 0;
   color: #A47312;
+  outline-offset: 0;
 }
