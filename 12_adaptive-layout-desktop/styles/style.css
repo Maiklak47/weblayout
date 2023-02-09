@@ -50,9 +50,10 @@ body {
 }
 
 .container {
-  max-width: 1800px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 75px;
+  /* justify-content: space-between; */
 }
 
 /* header */
@@ -67,22 +68,23 @@ body {
 
 .header__container {
   display: flex;
-  height: 100px;
+  min-height: 100px;
   font-size: 0;
   align-items: center;
 }
 
 .header__logo {
-  margin-right: auto;
+  margin-right: 543px;
 }
 
 .header__nav {
-  padding: 25px 0px;
+  /* padding: 25px 0px; */
   max-width: 708px;
-  margin-right: 260px;
+  margin-right: 200px;
 }
 
 .nav__list {
+  display: inline-block;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -160,38 +162,33 @@ body {
 
 
 /* hero */
-
-.hero {
-  height: 620px;
-}
-
+/*
 .main__hero {
-  margin-bottom: 50px;
-}
+  padding-bottom: 50px;
+} */
 
 .hero__container {
   position: relative;
-  height: 100%;
-  overflow: hidden;
 }
 
 .swiper {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 620px;
   border-radius: 32px;
 }
 
 .swiper-wrapper {
   position: absolute;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background-image: url('../img/hero-1.jpg');
+  background-size: 100% 100%;
+
 }
 
 .swiper-text {
   max-width: 100%;
-  height: 100%;
   position: absolute;
   padding: 100px 853px 100px 80px;
   z-index: 1;
@@ -247,8 +244,13 @@ body {
 /* about */
 
 .main__about {
-  margin-bottom: 100px;
+  padding-top: 51px;
+  /* padding-bottom: 64px; */
 }
+
+/* .about__container {
+  padding-bottom: 0;
+} */
 
 .about__title {
   margin: 0;
@@ -262,22 +264,22 @@ body {
 .about__descr {
   margin: 0;
   margin-bottom: 50px;
-  max-width: 70%;
+  width: 70%;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   color: #000000;
 }
 
-.about__descr_right {
+/* .about__descr_right {
   margin: 0;
   margin-bottom: 50px;
-  /* max-width: 70%; */
+  max-width: 70%;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   color: #000000;
-}
+} */
 
 .about__articles {
   display: flex;
@@ -294,8 +296,7 @@ body {
   align-items: flex-end;
 }
 
-.about__principles,
-.about__cards {
+.about__principles, .about__cards {
   width: calc((100% - 32px) / 2);
 }
 
@@ -321,7 +322,7 @@ body {
 }
 
 .about__content .about__descr {
-  margin-right: 141px;
+  margin-right: 150px;
   font-weight: 700;
   color: #ffffff;
 }
@@ -331,8 +332,7 @@ body {
 }
 
 .about__button {
-  padding: 20px 35px;
-  height: 60px;
+  padding: 19px 35px;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
@@ -365,7 +365,7 @@ body {
   position: relative;
   padding: 65px 115px 65px 300px;
   width: 100%;
-  height: 295px;
+  height: 295px;  /*ни как не могу победить это height */
   background: #ffffff;
   border: 1px solid #cacaca;
   border-radius: 32px;
@@ -389,8 +389,12 @@ body {
 
 /* how */
 
-.main__how {
+/* .main__how {
   margin-bottom: 102px;
+} */
+
+.how {
+  padding-top: 101px;
 }
 
 .how__title {
@@ -450,18 +454,18 @@ body {
   display: none;
   position: relative;
   width: 100%;
-  height: 468px;
+  min-height: 468px;
 }
 
 .how__one::after {
   content: "";
   position: absolute;
   left: 51%;
-  width: calc(98% / 2);
-  height: 98%;
+  width: calc(100% / 2);
+  min-height: 98%;
   background-image: url(../img/how-1.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .how__step--active {
@@ -470,7 +474,7 @@ body {
 
 .how__content {
   /* max-width: 758px; */
-  width: calc(83% / 2);
+  width: calc(84% / 2);
 }
 
 .how__content .how__title {
@@ -563,11 +567,13 @@ body {
 /* faq */
 
 .main__faq {
-  margin-bottom: 100px;
+  margin: 0;
+  padding-top: 99px;
+  padding-bottom: 33px;
 }
 
 .faq__title {
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 32px;
   font-weight: 400;
   font-size: 48px;
@@ -581,145 +587,95 @@ body {
   list-style: none;
 }
 
-.list__q {
-  display: flex;
-  width: 100%;
-  height: 35px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.list__text {
-  margin: 0;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-}
-
-.list__text:not(:last-child) {
-  margin-bottom: 32px;
-  padding-top: 30px;
-}
 
 .list__item {
   position: relative;
-  padding: 38px 0;
-}
-
-.list__item:last-child {
+  margin-top: 0;
+  padding: 39px 0;
+  border-top: 1px solid transparent;
   border-bottom: 1px solid #cacaca;
+  transition: border-color .3s;
+  cursor: pointer;
 }
 
-.is-active path {
+.list__item:first-child {
+  border-color: #cacaca;
+}
+
+.list__item:hover {
+  border-color: #FF9900;
+}
+
+.list__item:focus {
+  border-color: #FF9900;
+}
+
+.list__item:active {
+  border-color: #cacaca;
+}
+
+.list__item svg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -25px;
+  transition: transform .3s ease-in-out;
+}
+
+.list__item:hover .faq-title3 {
+  color: #FF9900;
+}
+
+.list__item:focus .faq-title3 {
+  color: #FF9900;
+}
+
+.list__item:active .faq-title3 {
+  color: #000000;
+}
+
+.list__item:hover svg ellipse {
+  fill: #FF9900;
+}
+
+.list__item:focus svg ellipse {
+  fill: #FF9900;
+}
+
+.list__item:active svg ellipse {
+  fill: #cacaca;
+}
+
+.list__item svg ellipse,
+.list__item svg path {
+  transition: fill .3s;
+
+}
+
+.list__item:hover svg path {
+  fill: #FFFFFF;
+}
+
+.list__item:focus svg path {
+  fill: #FFFFFF;
+}
+
+.list__item:active svg path {
+  fill: #000000;
+}
+
+.faq__open:active svg {
   transform: rotate(45deg);
 }
 
-.list__descr {
-  margin: 0;
+.faq-title3 {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   color: #000000;
-  order: 1;
-}
-
-.list__button {
-  padding: 0;
-  width: 50px;
-  height: 50px;
-  fill: #000000;
-  border: none;
-  border-radius: 50%;
-  background-color: #cacaca;
-  order: 2;
-  cursor: pointer;
-  transition: color 0.3s ease-in-out, fill 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-.list__button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  border-top: 1px solid #cacaca;
-  border-bottom: 1px solid #cacaca;
-  transition: color 0.3s ease-in-out, border-top 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
-}
-
-.list__button:focus {
-  fill: #ffffff;
-  background-color: #ff9900;
-}
-
-.list__button:focus::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  border-top: 1px solid #ff9900;
-  border-bottom: 1px solid #ff9900;
-}
-
-.list__button:focus+.list__descr {
-  color: #ff9900;
-}
-
-.list__button:focus-visible {
-  outline: none;
-}
-
-.list__button:hover {
-  fill: #ffffff;
-  background-color: #ff9900;
-}
-
-.list__button:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  border-top: 1px solid #ff9900;
-  border-bottom: 1px solid #ff9900;
-}
-
-.list__button:hover+.list__descr {
-  color: #ff9900;
-}
-
-.list__button:active path {
-  transform: rotate(45deg);
-  transform-origin: 50% 50%;
-  color: #CACACA;
-}
-
-.list__button:active+.list__descr {
-  color: #000000;
-}
-
-.list__button:active::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  border-top: 1px solid #CACACA;
-  border-bottom: 1px solid #CACACA;
-}
-
-.list__button:active {
-  background-color: #CACACA;
-}
-
-.list__button path {
-  transform-origin: 50% 50%;
-  transition: transform 0.3s ease-in-out;
+  transition: color .3s;
 }
 
 /* footer */
@@ -730,7 +686,7 @@ body {
 
 .footer__container {
   display: flex;
-  padding: 50px 15px;
+  padding: 115px 75px;
   justify-content: space-between;
 }
 
@@ -816,7 +772,7 @@ body {
 }
 
 .footer__form {
-  margin-right: 236px;
+  margin-right: 220px;
   width: 570px;
 }
 
@@ -919,7 +875,8 @@ body {
 
 .footer__descr {
   margin: 0;
-  padding-top: 88px;
+  padding-top: 87px;
+  padding-left: 17px;
   width: 363px;
   font-weight: 400;
   font-size: 16px;
