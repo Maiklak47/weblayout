@@ -59,7 +59,8 @@ body {
 /* header */
 
 .header {
-  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 13px;
   background: #ffffff;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 32px 32px;
@@ -68,19 +69,18 @@ body {
 
 .header__container {
   display: flex;
-  min-height: 100px;
   font-size: 0;
   align-items: center;
 }
 
 .header__logo {
-  margin-right: 543px;
+  margin-right: 553px;
 }
 
 .header__nav {
   /* padding: 25px 0px; */
   max-width: 708px;
-  margin-right: 200px;
+  margin-right: 220px;
 }
 
 .nav__list {
@@ -173,18 +173,9 @@ body {
 
 .swiper {
   position: relative;
-  width: 100%;
   min-height: 620px;
   border-radius: 32px;
-}
-
-.swiper-wrapper {
-  position: absolute;
-  width: 100%;
-  min-height: 100%;
   background-image: url('../img/hero-1.jpg');
-  background-size: 100% 100%;
-
 }
 
 .swiper-text {
@@ -271,18 +262,9 @@ body {
   color: #000000;
 }
 
-/* .about__descr_right {
-  margin: 0;
-  margin-bottom: 50px;
-  max-width: 70%;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  color: #000000;
-} */
-
 .about__articles {
   display: flex;
+  justify-content: space-between;
 }
 
 .about__principles {
@@ -363,9 +345,9 @@ body {
 
 .about__item {
   position: relative;
-  padding: 65px 115px 65px 300px;
+  padding: 64px 12px 74px 300px;
   width: 100%;
-  height: 295px;  /*ни как не могу победить это height */
+  min-height: 295px;
   background: #ffffff;
   border: 1px solid #cacaca;
   border-radius: 32px;
@@ -682,11 +664,11 @@ body {
 
 .footer {
   background: #000000;
+  padding-top: 115px;
 }
 
 .footer__container {
   display: flex;
-  padding: 115px 75px;
   justify-content: space-between;
 }
 
