@@ -1,10 +1,10 @@
 @media (max-width: 1600px) {
   .container {
-    padding: 0 15px;
+    margin: 0 15px;
   }
 
-  .swiper-text {
-    padding: 50px 455px 50px 50px;
+  .swiper {
+    padding: 50px 12px 50px 81px;
   }
 
   .about__content {
@@ -37,7 +37,7 @@
   }
 
   .footer__container {
-    padding: 50px 15px;
+    padding: 0 15px;
   }
 
   .footer__links {
@@ -81,6 +81,11 @@
     padding: 35px 20px 50px 260px;
   }
 
+  .how__content {
+    width: calc(100% / 2);
+    min-height: 100%;
+  }
+
   .how__step {
     height: 492px;
   }
@@ -115,8 +120,8 @@
     margin-right: 65px;
   }
 
-  .swiper-text {
-    padding: 50px 230px 50px 50px;
+  .swiper {
+    padding: 25px 12px 25px 51px;
   }
 
   .about__descr {
@@ -236,11 +241,12 @@
   }
 
   .swiper {
-    min-height: 670px;
+    min-height: 668px;
+    padding: 160px 12px 154px 77px;
   }
 
   .swiper-text {
-    padding: 160px 77px 160px 77px;
+    max-width: 85%;
   }
 
   .hero__title {
@@ -254,10 +260,6 @@
     font-size: 20px;
     line-height: 24px;
   }
-
-  /* .hero__button {
-    margin-bottom: 20px;
-  } */
 
   .main__hero {
     margin-bottom: 0;
@@ -314,8 +316,9 @@
 
   .how__step::after {
     left: 53%;
-    width: calc(94% / 2);
+    width: calc(96% / 2);
     min-height: 100%;
+    background-image: url(../img/how-1-1024.jpg);
   }
 
   .how__list {
@@ -361,15 +364,11 @@
 
   .main__faq {
     margin-bottom: 0;
-    /* padding-top: 57px; */
-  }
-
-  .footer__container {
-    padding: 50px 0;
+    padding-top: 54px;
   }
 
   .footer {
-    padding-top: 21px;
+    padding-top: 72px;
   }
 
   .faq-title3 {
@@ -421,7 +420,7 @@
   }
 
   .container {
-    margin: 11px 34px -3px 50px;
+    margin: 0 15px;
     padding: 0;
   }
 
@@ -432,10 +431,11 @@
   .swiper {
     min-height: 663px;
     border-radius: 24px;
+    padding: 160px 12px 100px 40px;
   }
 
   .swiper-text {
-    padding: 160px 40px;
+    max-width: 95%;
   }
 
   .hero__title {
@@ -525,6 +525,7 @@
     top: 0;
     left: 0;
     border-radius: 24px;
+    background-image: url(../img/how-1.jpg);
   }
 
   .how__descr {
@@ -611,12 +612,13 @@
 
   .swiper {
     min-height: 309px;
+    padding: 60px 12px 75px 40px;
     border-radius: 16px;
   }
 
   .swiper-text {
-    padding: 60px 22px;
     text-align: center;
+    max-width: 80%;
   }
 
   .hero__title {
@@ -770,13 +772,13 @@
   }
 
   .how__descr {
-    margin-bottom: 109px;
+    margin-bottom: 50px;
     font-size: 14px;
     line-height: 28px;
   }
 
   .how__button {
-    margin-right: 10px;
+    margin-right: 8px;
     padding: 12px 43px;
     font-size: 12px;
     line-height: 15px;
@@ -792,6 +794,10 @@
 
   .main__how {
     margin-bottom: 59px;
+  }
+
+  .main__faq {
+    margin-bottom: 39px;
   }
 
   .faq__title {
@@ -830,10 +836,6 @@
 
   .main__faq {
     margin-bottom: 59px;
-  }
-
-  .footer__container {
-    padding: 34px 0;
   }
 
   .footer__form {
@@ -926,10 +928,6 @@
     border-radius: 0px 0px 16px 16px;
   }
 
-  /* .header__container {
-    padding: 0 10px 13px 15px;
-  } */
-
   .header__burger {
     margin-right: 0;
   }
@@ -940,6 +938,14 @@
 
   main {
     padding-top: 30px;
+  }
+
+  .swiper {
+    padding: 60px 12px 11px 12px;
+  }
+
+  .swiper-text {
+    max-width: 100%;
   }
 
   .hero__title {
@@ -983,12 +989,8 @@
     margin-bottom: -100px;
   }
 
-  .how__button {
-    margin-right: 10px;
-  }
-
   .main__how {
-    margin-bottom: 103px;
+    margin-bottom: 145px;
   }
 
   .faq-title3 {
@@ -1032,7 +1034,7 @@
   }
 
   .main__faq {
-    margin-bottom: 6px;
+    margin-bottom: 39px;
   }
 
   .form__button {

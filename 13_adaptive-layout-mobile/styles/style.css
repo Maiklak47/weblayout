@@ -53,15 +53,14 @@ body {
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 75px;
+  padding: 0 56px 0 75px;
   /* justify-content: space-between; */
 }
 
 /* header */
 
 .header {
-  padding-top: 15px;
-  padding-bottom: 13px;
+  padding: 16px 2px 13px 0px;
   background: #ffffff;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 32px 32px;
@@ -85,7 +84,7 @@ body {
 .header__nav {
   /* padding: 25px 0px; */
   max-width: 708px;
-  margin-right: 220px;
+  margin-right: 260px;
 }
 
 .nav__list {
@@ -167,28 +166,23 @@ body {
 
 
 /* hero */
-/*
-.main__hero {
-  padding-bottom: 50px;
-} */
 
 .hero__container {
   position: relative;
 }
 
 .swiper {
+  padding: 100px 12px 100px 81px;
   overflow: hidden;
   position: relative;
-  min-height: 620px;
+
   border-radius: 32px;
   background-image: url('../img/hero-1.jpg');
   background-size: cover;
 }
 
 .swiper-text {
-  max-width: 100%;
-  position: absolute;
-  padding: 100px 853px 100px 80px;
+  max-width: 55%;
   z-index: 1;
 }
 
@@ -243,12 +237,7 @@ body {
 
 .main__about {
   padding-top: 51px;
-  /* padding-bottom: 64px; */
 }
-
-/* .about__container {
-  padding-bottom: 0;
-} */
 
 .about__title {
   margin: 0;
@@ -442,7 +431,7 @@ body {
 .how__step {
   display: none;
   position: relative;
-  width: 100%;
+  width: 99%;
   min-height: 468px;
 }
 
@@ -462,7 +451,6 @@ body {
 }
 
 .how__content {
-  /* max-width: 758px; */
   width: calc(84% / 2);
   min-height: 100%;
 }
@@ -476,7 +464,6 @@ body {
 }
 
 .how__descr {
-  /* margin-right: 0; */
   overflow: hidden;
   margin-bottom: 16px;
   max-width: 85%;
@@ -700,7 +687,7 @@ body {
 }
 
 .footer__links {
-  margin-right: 236px;
+  margin-right: 221px;
   width: 363px;
 }
 
@@ -871,7 +858,7 @@ body {
 .footer__descr {
   margin: 0;
   padding-top: 87px;
-  padding-left: 17px;
+  padding-left: 0;
   width: 363px;
   font-weight: 400;
   font-size: 16px;
