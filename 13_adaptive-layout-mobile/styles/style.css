@@ -83,7 +83,7 @@ body {
 
 .header__nav {
   /* padding: 25px 0px; */
-  max-width: 708px;
+  /* max-width: 708px; */
   margin-right: 260px;
 }
 
@@ -431,7 +431,7 @@ body {
 .how__step {
   display: none;
   position: relative;
-  width: 99%;
+  width: 100%;
   min-height: 468px;
 }
 
@@ -439,7 +439,7 @@ body {
   content: "";
   position: absolute;
   left: 51%;
-  width: calc(100% / 2);
+  width: calc(98% / 2);
   min-height: 98%;
   background-image: url(../img/how-1.jpg);
   background-repeat: no-repeat;
@@ -464,8 +464,8 @@ body {
 }
 
 .how__descr {
-  overflow: hidden;
   margin-bottom: 16px;
+  margin-top: 0;
   max-width: 85%;
   font-weight: 400;
   font-size: 16px;
