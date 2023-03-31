@@ -180,13 +180,17 @@
   }
 }
 
+/* ############################################################################ */
+
 @media (max-width: 1024px) {
   .container {
-    padding: 11px 34px 13px 50px;
+    padding: 0 34px 0 50px;
   }
 
   .header {
-    margin-bottom: 28px;
+    margin-bottom: 40px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   .header__container {
@@ -196,7 +200,7 @@
   .header__burger {
     display: inline-block;
     position: relative;
-    margin-right: 80px;
+    margin-right: 48px;
     padding: 0;
     width: 30px;
     height: 23px;
@@ -242,6 +246,7 @@
   .swiper {
     min-height: 668px;
     padding: 160px 12px 154px 77px;
+    background-image: url(../img/low-angle-photo-of-balconies-1024.jpg);
   }
 
   .swiper-text {
@@ -262,6 +267,7 @@
 
   .main__hero {
     margin-bottom: 0;
+    padding-bottom: 26px;
   }
 
   .main__about {
@@ -271,6 +277,14 @@
   .about__descr {
     margin-bottom: 60px;
     width: 100%;
+  }
+
+  .about__item .about__title {
+    margin-bottom: 6px;
+  }
+
+  .about__principles {
+    background-image: url(../img/Rectangle\ 2\ 1024.jpg);
   }
 
   .about__content {
@@ -305,10 +319,6 @@
     margin-bottom: 0;
   }
 
-  .how {
-    padding-top: 56px;
-  }
-
   .how__step {
     height: auto;
   }
@@ -325,7 +335,7 @@
   }
 
   .how__descr {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     width: 85%;
   }
 
@@ -339,6 +349,7 @@
 
   .main__how {
     margin-bottom: 0;
+    padding-top: 80px;
   }
 
   .faq__list {
@@ -363,11 +374,11 @@
 
   .main__faq {
     margin-bottom: 0;
-    padding-top: 54px;
+    padding-top: 80px;
   }
 
   .footer {
-    padding-top: 72px;
+    padding-top: 95px;
   }
 
   .faq-title3 {
@@ -402,7 +413,7 @@
 
   .form__button {
     padding: 19px 38px;
-    margin-right: 151px;
+    margin-right: 152px;
     margin-bottom: 0;
     width: 241px;
   }
@@ -414,8 +425,9 @@
 @media (max-width: 768px) {
 
   .header {
-    margin-bottom: 26px;
-    padding: 0;
+    margin-bottom: 40px;
+    padding-top: 11px;
+    padding-bottom: 10px;
     border-radius: 0px 0px 24px 24px;
   }
 
@@ -427,10 +439,15 @@
     min-height: 663px;
     border-radius: 24px;
     padding: 160px 12px 100px 40px;
+    background-image: url(../img/low-angle-photo-of-balconies-2462015\ 1\ 768.jpg);
   }
 
   .swiper-text {
     max-width: 95%;
+  }
+
+  .main__hero {
+    padding-bottom: 24px;
   }
 
   .hero__title {
@@ -454,6 +471,10 @@
 
   .about__descr {
     margin-bottom: 54px;
+  }
+
+  .about__button {
+    padding: 19px 35px;
   }
 
   .about__item .about__title {
@@ -488,7 +509,8 @@
   }
 
   .main__how {
-    padding-top: 57px;
+    padding-top: 80px;
+    padding-bottom: 33px;
   }
 
   .how__list {
@@ -501,11 +523,11 @@
   }
 
   .how__title {
-    margin-bottom: 46px;
+    margin-bottom: 50px;
   }
 
   .how__step {
-    padding-top: 336px;
+    padding-top: 334px;
     min-height: 799px;
     flex-direction: column-reverse;
   }
@@ -526,16 +548,16 @@
   .how__descr {
     min-width: 100%;
     margin-right: 0;
-    margin-bottom: 58px;
+    margin-bottom: 55px;
   }
 
   .how__button {
-    margin-right: 26px;
-    padding: 20px 39px;
+    margin-right: 28px;
+    padding: 20px 38px;
   }
 
-  .main__how {
-    margin-bottom: 8px;
+  .how__contract {
+    padding: 20px 37px;
   }
 
   .list__item {
@@ -543,7 +565,7 @@
   }
 
   .list__item:not(:first-child) {
-    padding: 28px 60px 24px 0px;
+    padding: 28px 86px 24px 0px;
     min-height: 124px;
   }
 
@@ -562,7 +584,7 @@
   }
 
   .footer {
-    padding-top: 5px;
+    padding-top: 28px;
   }
 
   .footer__container {
@@ -583,7 +605,7 @@
   }
 
   .footer__logo {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 }
 
@@ -592,7 +614,7 @@
 @media (max-width: 576px) {
 
   .container {
-    padding: 12px 15px 4px 15px;
+    padding: 0 15px 0 15px;
   }
 
   .header {
@@ -626,7 +648,7 @@
   }
 
   .hero__descr {
-    margin-bottom: 32px;
+    margin-bottom: 33px;
     font-size: 12px;
     line-height: 15px;
   }
@@ -635,10 +657,6 @@
     padding: 13px 28px;
     font-size: 12px;
     line-height: 15px;
-  }
-
-  .main__hero {
-    margin-bottom: 60px;
   }
 
   .about__title {
@@ -788,14 +806,10 @@
   }
 
   .how__contract {
-    padding: 11px 30px;
+    padding: 11px 31px;
     font-size: 12px;
     line-height: 15px;
     border-radius: 8px;
-  }
-
-  .main__how {
-    margin-bottom: 59px;
   }
 
   .main__faq {
@@ -819,16 +833,12 @@
     height: 30px;
   }
 
+  .list__item svg {
+    margin-top: -17px;
+  }
+
   .list__item:not(:first-child) {
     padding: 28px 33px 24px 0px;
-  }
-
-  .list__item svg:not(:first-child) {
-    top: 64px;
-  }
-
-  .list__item svg:not(:first-child):not(:last-child) {
-    top: 50px;
   }
 
   .list__item {
@@ -947,8 +957,9 @@
 @media (max-width: 320px) {
 
   .header {
-    margin: 0;
-    padding-top: 6px;
+    margin-bottom: 13px;
+    padding-bottom: 0px;
+    padding-top: 17px;
     border-radius: 0px 0px 16px 16px;
   }
 
@@ -985,7 +996,7 @@
   }
 
   .main__hero {
-    margin-bottom: 33px;
+    padding-bottom: 50px;
   }
 
   .about__title {
@@ -1005,7 +1016,11 @@
   }
 
   .main__about {
-    margin-bottom: 45px;
+    padding-bottom: 62px;
+  }
+
+  .main__how {
+    padding-bottom: 44px;
   }
 
   .how__content .how__title {
@@ -1015,10 +1030,6 @@
   .how__descr {
     min-width: 91%;
     margin-bottom: 53px;
-  }
-
-  .main__how {
-    margin-bottom: 30px;
   }
 
   .faq-title3 {
@@ -1048,8 +1059,16 @@
     min-height: 109px;
   }
 
+  .list__item:nth-child(3) svg {
+    top: 65px;
+  }
+
   .main__faq {
     margin-bottom: 40px;
+  }
+
+  .footer {
+    padding-top: 20px;
   }
 
   .form__button {
@@ -1058,6 +1077,6 @@
   }
 
   .form__textarea {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 }

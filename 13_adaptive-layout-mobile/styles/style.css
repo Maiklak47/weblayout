@@ -82,8 +82,6 @@ body {
 }
 
 .header__nav {
-  /* padding: 25px 0px; */
-  /* max-width: 708px; */
   margin-right: 260px;
 }
 
@@ -175,7 +173,7 @@ body {
   padding: 100px 12px 100px 81px;
   overflow: hidden;
   position: relative;
-
+  background-position: center;
   border-radius: 32px;
   background-image: url('../img/hero-1.jpg');
   background-size: cover;
@@ -292,7 +290,7 @@ body {
 
 .about__content {
   display: flex;
-  padding: 50px;
+  padding: 51px;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 32px;
@@ -377,7 +375,7 @@ body {
 
 .how__title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   font-weight: 400;
   font-size: 48px;
   line-height: 59px;
@@ -474,7 +472,7 @@ body {
 }
 
 .how__button {
-  padding: 20px 39px;
+  padding: 20px 38px;
   margin-right: 26px;
   font-weight: 700;
   font-size: 16px;
@@ -507,7 +505,7 @@ body {
 }
 
 .how__contract {
-  padding: 20px 38px;
+  padding: 20px 37px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -546,7 +544,7 @@ body {
 
 .main__faq {
   margin: 0;
-  padding-top: 99px;
+  padding-top: 101px;
   padding-bottom: 33px;
 }
 
@@ -665,6 +663,7 @@ body {
 .footer {
   background: #000000;
   padding-top: 115px;
+  padding-bottom: 15px;
 }
 
 .footer__container {
@@ -791,7 +790,7 @@ body {
 
 .form__textarea {
   padding: 14px 0 104px 24px;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   width: 100%;
   height: 150px;
   background: #414141;
