@@ -1,6 +1,6 @@
 @media (max-width: 1600px) {
   .container {
-    margin: 0 15px;
+    margin: 0;
   }
 
   .swiper {
@@ -87,7 +87,7 @@
   }
 
   .how__step {
-    height: 492px;
+    min-height: 492px;
   }
 
   .how__descr {
@@ -113,11 +113,11 @@
 
 @media (max-width: 1200px) {
   .header__nav {
-    margin-right: 80px;
+    margin-right: 45px;
   }
 
   .nav__item:not(:last-child) {
-    margin-right: 65px;
+    margin-right: 50px;
   }
 
   .swiper {
@@ -135,7 +135,7 @@
   .about__principles {
     margin-bottom: 32px;
     width: 100%;
-    height: 640px;
+    min-height: 640px;
   }
 
   .about__content .about__descr {
@@ -182,12 +182,11 @@
 
 @media (max-width: 1024px) {
   .container {
-    margin: 11px 34px 13px 50px;
-    padding: 0;
+    padding: 11px 34px 13px 50px;
   }
 
   .header {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
   }
 
   .header__container {
@@ -291,7 +290,7 @@
   }
 
   .about__item {
-    padding: 62px 136px 35px 317px;
+    padding: 65px 136px 35px 317px;
     height: auto;
     background-size: 190px 165px;
     background-position: 75px 61px;
@@ -316,13 +315,13 @@
 
   .how__step::after {
     left: 53%;
-    width: calc(96% / 2);
+    width: calc(94% / 2);
     min-height: 100%;
     background-image: url(../img/how-1-1024.jpg);
   }
 
   .how__list {
-    margin-bottom: 59px;
+    margin-bottom: 62px;
   }
 
   .how__descr {
@@ -347,7 +346,7 @@
   }
 
   .list__item {
-    height: 114px;
+    min-height: 114px;
   }
 
   .list__item:nth-child(2n) {
@@ -415,13 +414,9 @@
 @media (max-width: 768px) {
 
   .header {
-    padding-top: 0;
-    border-radius: 0px 0px 24px 24px;
-  }
-
-  .container {
-    margin: 0 15px;
+    margin-bottom: 26px;
     padding: 0;
+    border-radius: 0px 0px 24px 24px;
   }
 
   .header__search {
@@ -450,7 +445,7 @@
   }
 
   .main__about {
-    padding-top: 26px;
+    padding-top: 10px;
   }
 
   .about__title {
@@ -466,7 +461,7 @@
   }
 
   .about__principles {
-    height: 650px;
+    min-height: 650px;
     border-radius: 24px;
   }
 
@@ -493,7 +488,7 @@
   }
 
   .main__how {
-    padding-top: 73px;
+    padding-top: 57px;
   }
 
   .how__list {
@@ -510,7 +505,7 @@
   }
 
   .how__step {
-    padding-top: 335px;
+    padding-top: 336px;
     min-height: 799px;
     flex-direction: column-reverse;
   }
@@ -540,13 +535,16 @@
   }
 
   .main__how {
-    margin-bottom: 24px;
+    margin-bottom: 8px;
+  }
 
+  .list__item {
+    padding-right: 65px;
   }
 
   .list__item:not(:first-child) {
-    padding: 28px 156px 24px 0px;
-    height: 124px;
+    padding: 28px 60px 24px 0px;
+    min-height: 124px;
   }
 
   .list__item:nth-child(2n + 3) svg {
@@ -561,6 +559,10 @@
   .main__faq {
     margin-bottom: 101px;
     padding-top: 16px;
+  }
+
+  .footer {
+    padding-top: 5px;
   }
 
   .footer__container {
@@ -588,8 +590,9 @@
 /* ########################################################################################### */
 
 @media (max-width: 576px) {
+
   .container {
-    margin: 0 15px;
+    padding: 12px 15px 4px 15px;
   }
 
   .header {
@@ -603,11 +606,6 @@
 
   .header__burger {
     padding-left: 20px;
-  }
-
-  .header__nav {
-    padding-top: 78px;
-    padding-left: 15px;
   }
 
   .swiper {
@@ -657,7 +655,7 @@
 
   .about__principles {
     margin-right: 0;
-    height: auto;
+    min-height: 400px;
     background: none;
     flex-direction: column;
     align-items: flex-start;
@@ -670,7 +668,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     background-image: url("../img/project-back-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -680,7 +678,7 @@
   .about__content {
     position: relative;
     padding: 0;
-    height: 403px;
+    min-height: 431px;
     background: none;
     flex-direction: column;
     justify-content: flex-end;
@@ -713,7 +711,7 @@
   }
 
   .about__item:not(:last-child) {
-    margin-bottom: 31px;
+    margin-bottom: 0;
   }
 
   .about__articles .about__title {
@@ -723,8 +721,12 @@
     line-height: 22px;
   }
 
+  .main__how {
+    padding-top: 0;
+  }
+
   .main__about {
-    margin-bottom: 61px;
+    margin-bottom: 0;
   }
 
   .how__container {
@@ -806,24 +808,47 @@
     line-height: 29px;
   }
 
-  .list__item {
-    padding: 30px 0;
+  .faq-title3 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .list__item svg {
+    width: 30px;
+    height: 30px;
   }
 
   .list__item:not(:first-child) {
-    height: 132px;
+    padding: 28px 33px 24px 0px;
+  }
+
+  .list__item svg:not(:first-child) {
+    top: 64px;
+  }
+
+  .list__item svg:not(:first-child):not(:last-child) {
+    top: 50px;
+  }
+
+  .list__item {
+    padding: 30px 65px 30px 0px;
+  }
+
+  .list__item:not(:first-child) {
+    min-height: 132px;
   }
 
   .list__item:not(:last-child) {
-    height: 132px;
+    min-height: 132px;
   }
 
   .list__item:first-child {
-    height: 114px;
+    min-height: 114px;
   }
 
   .list__item:last-child {
-    height: 109px;
+    min-height: 109px;
   }
 
   .list__descr {
@@ -899,7 +924,7 @@
   }
 
   .footer__social:not(:last-child) {
-    margin-right: 16px;
+    margin-right: 12px;
   }
 
   .header__search {
@@ -922,10 +947,13 @@
 @media (max-width: 320px) {
 
   .header {
-    height: 69px;
     margin: 0;
-    padding: 17px 0;
+    padding-top: 6px;
     border-radius: 0px 0px 16px 16px;
+  }
+
+  .header__container {
+    padding-bottom: 16px;
   }
 
   .header__burger {
@@ -937,7 +965,7 @@
   }
 
   main {
-    padding-top: 30px;
+    padding-top: 18px;
   }
 
   .swiper {
@@ -960,12 +988,16 @@
     margin-bottom: 33px;
   }
 
+  .about__title {
+    margin-bottom: 19px;
+  }
+
   .about__content {
-    padding-bottom: 4px;
+    padding-bottom: 32px;
   }
 
   .about__principles {
-    margin-bottom: 29px;
+    margin-bottom: 0;
   }
 
   .about__item:not(:last-child) {
@@ -973,11 +1005,11 @@
   }
 
   .main__about {
-    margin-bottom: -13px;
+    margin-bottom: 45px;
   }
 
   .how__content .how__title {
-    margin-bottom: -6px;
+    margin-bottom: 7px;
   }
 
   .how__descr {
@@ -985,12 +1017,8 @@
     margin-bottom: 53px;
   }
 
-  .how__content {
-    margin-bottom: -100px;
-  }
-
   .main__how {
-    margin-bottom: 145px;
+    margin-bottom: 30px;
   }
 
   .faq-title3 {
@@ -999,22 +1027,9 @@
     line-height: 24px;
   }
 
-  .list__item svg {
-    width: 30px;
-    height: 30px;
-  }
-
-  .list__item svg:not(:first-child) {
-    top: 64px;
-  }
-
-  .list__item svg:not(:first-child):not(:last-child) {
-    top: 50px;
-  }
-
   .list__item:not(:first-child) {
     padding: 28px 52px 24px 0px;
-    height: 124px;
+    min-height: 124px;
   }
 
   .list__item {
@@ -1022,19 +1037,19 @@
   }
 
   .list__item:not(:last-child) {
-    height: 132px;
+    min-height: 132px;
   }
 
   .list__item:first-child {
-    height: 113px;
+    min-height: 113px;
   }
 
   .list__item:last-child {
-    height: 109px;
+    min-height: 109px;
   }
 
   .main__faq {
-    margin-bottom: 39px;
+    margin-bottom: 40px;
   }
 
   .form__button {
