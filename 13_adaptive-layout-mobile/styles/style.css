@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -7,6 +8,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+/* * {
+  outline: solid 1px red;
+} */
 
 @font-face {
   font-family: "Montserrat";
@@ -52,9 +57,8 @@ body {
 
 .container {
   max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 56px 0 75px;
-  /* justify-content: space-between; */
+  /* margin: 0 auto; */
+  padding: 0 75px;
 }
 
 /* header */
@@ -68,6 +72,7 @@ body {
 }
 
 .header__container {
+  overflow:hidden;
   display: flex;
   font-size: 0;
   align-items: center;
@@ -858,7 +863,7 @@ body {
   margin: 0;
   padding-top: 87px;
   padding-left: 0;
-  width: 363px;
+  max-width: 363px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;

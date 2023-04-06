@@ -36,10 +36,6 @@
     width: 95%;
   }
 
-  .footer__container {
-    padding: 0 15px;
-  }
-
   .footer__links {
     margin-right: 200px;
     width: 300px;
@@ -94,12 +90,18 @@
     margin-bottom: 17px;
   }
 
+  .list__item:nth-child(2n) {
+    height: 122px;
+    padding-top: 27px;
+    padding-right: 70px;
+  }
+
   .footer__links {
-    margin-right: 145px;
+    margin-right: 60px;
   }
 
   .footer__form {
-    margin-right: 145px;
+    margin-right: 60px;
   }
 
   .footer__title {
@@ -171,6 +173,16 @@
     height: auto;
   }
 
+  .list__item {
+    min-height: 122px;
+    padding-top: 27px;
+    padding-right: 65px;
+  }
+
+  .footer__descr {
+    display: none;
+  }
+
   .footer__links {
     margin-right: 60px;
   }
@@ -184,7 +196,7 @@
 
 @media (max-width: 1024px) {
   .container {
-    padding: 0 34px 0 50px;
+    padding: 0 50px 0 50px;
   }
 
   .header {
@@ -245,7 +257,7 @@
 
   .swiper {
     min-height: 668px;
-    padding: 160px 12px 154px 77px;
+    padding: 160px 0px 160px 76px;
     background-image: url(../img/low-angle-photo-of-balconies-1024.jpg);
   }
 
@@ -386,10 +398,6 @@
     font-size: 20px;
   }
 
-  .footer__descr {
-    display: none;
-  }
-
   .footer__links {
     margin-right: 99px;
   }
@@ -438,7 +446,7 @@
   .swiper {
     min-height: 663px;
     border-radius: 24px;
-    padding: 160px 12px 100px 40px;
+    padding: 160px 0px 100px 40px;
     background-image: url(../img/low-angle-photo-of-balconies-2462015\ 1\ 768.jpg);
   }
 
@@ -486,18 +494,21 @@
     border-radius: 24px;
   }
 
+
+  /* 35px 35px 34px 40px; */
+
   .about__content {
-    padding: 34px 40px;
+    padding: 34px 39px;
     border-radius: 24px;
   }
 
   .about__content .about__descr {
-    margin-right: 50px;
+    margin-right: 45px;
   }
 
   .about__item {
     min-height: 235px;
-    padding: 36px 43px 33px 170px;
+    padding: 36px 20px 33px 170px;
     height: auto;
     background-size: 114px 99px;
     background-position: 39px 67px;
@@ -548,7 +559,7 @@
   .how__descr {
     min-width: 100%;
     margin-right: 0;
-    margin-bottom: 55px;
+    margin-bottom: 23px;
   }
 
   .how__button {
@@ -838,7 +849,7 @@
   }
 
   .list__item:not(:first-child) {
-    padding: 28px 33px 24px 0px;
+    padding: 28px 45px 24px 0px;
   }
 
   .list__item {
