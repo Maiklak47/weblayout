@@ -11,8 +11,8 @@
     padding: 30px;
   }
 
-  .about__content .about__descr {
-    margin-right: 20px;
+  .about__descr_osn {
+    padding-right: 25px;
   }
 
   .about__item {
@@ -87,7 +87,7 @@
   }
 
   .how__descr {
-    margin-bottom: 17px;
+    margin-bottom: 0;
   }
 
   .list__item:nth-child(2n) {
@@ -140,10 +140,6 @@
     min-height: 640px;
   }
 
-  .about__content .about__descr {
-    margin-right: 185px;
-  }
-
   .about__cards {
     display: flex;
     width: 100%;
@@ -175,7 +171,7 @@
 
   .list__item {
     min-height: 122px;
-    padding-top: 27px;
+    padding-top: 38px;
     padding-right: 65px;
   }
 
@@ -196,7 +192,7 @@
 
 @media (max-width: 1024px) {
   .container {
-    padding: 0 50px 0 50px;
+    padding: 0 50px;
   }
 
   .header {
@@ -251,7 +247,7 @@
     height: 48px;
   }
 
-  .header__nav .nav__list {
+  .nav__list_ul {
     display: none;
   }
 
@@ -291,8 +287,9 @@
     width: 100%;
   }
 
-  .about__item .about__title {
-    margin-bottom: 6px;
+  .about__descr_text {
+    width: 100%;
+    margin-bottom: 60px;
   }
 
   .about__principles {
@@ -300,19 +297,25 @@
   }
 
   .about__content {
-    padding: 50px;
+    padding: 34px 49px 34px 50px;
   }
 
-  .about__content .about__descr {
-    margin-right: 185px;
+  .about__title_h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
   }
 
   .about__button {
-    padding: 20px 34px;
+    padding: 19px 35px;
   }
 
   .about__cards {
     flex-direction: column;
+  }
+
+  .about__descr_osn {
+    padding-right: 30px;
   }
 
   .about__item {
@@ -338,12 +341,16 @@
   .how__step::after {
     left: 53%;
     width: calc(94% / 2);
-    min-height: 100%;
+    min-height: 93%;
     background-image: url(../img/how-1-1024.jpg);
   }
 
   .how__list {
-    margin-bottom: 62px;
+    margin-bottom: 29px;
+  }
+
+  .how__title_konsul {
+    margin-bottom: 7px;
   }
 
   .how__descr {
@@ -375,7 +382,7 @@
   .list__item:nth-child(2n) {
     height: 122px;
     padding-top: 27px;
-    padding-right: 60px;
+    padding-right: 150px;
   }
 
   .list__descr {
@@ -386,7 +393,7 @@
 
   .main__faq {
     margin-bottom: 0;
-    padding-top: 80px;
+    padding-top: 61px;
   }
 
   .footer {
@@ -467,26 +474,34 @@
   .hero__descr {
     font-size: 18px;
     line-height: 22px;
+    padding-right: 40px;
   }
 
   .main__about {
     padding-top: 10px;
   }
 
-  .about__title {
-    margin-bottom: 21px;
+  .about__title_h3 {
+    margin-bottom: 7px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
   }
 
   .about__descr {
     margin-bottom: 54px;
   }
 
-  .about__button {
-    padding: 19px 35px;
+  .about__descr_text {
+    margin-bottom: 57px;
   }
 
-  .about__item .about__title {
-    margin-bottom: 9px;
+  .about__descr_osn {
+    padding-right: 35px;
+  }
+
+  .about__button {
+    padding: 19px 36px;
   }
 
   .about__principles {
@@ -494,21 +509,14 @@
     border-radius: 24px;
   }
 
-
-  /* 35px 35px 34px 40px; */
-
   .about__content {
-    padding: 34px 39px;
+    padding: 19px 39px;
     border-radius: 24px;
-  }
-
-  .about__content .about__descr {
-    margin-right: 45px;
   }
 
   .about__item {
     min-height: 235px;
-    padding: 36px 20px 33px 170px;
+    padding: 36px 43px 21px 170px;
     height: auto;
     background-size: 114px 99px;
     background-position: 39px 67px;
@@ -520,8 +528,8 @@
   }
 
   .main__how {
-    padding-top: 80px;
-    padding-bottom: 33px;
+    padding-top: 83px;
+    padding-bottom: 14px;
   }
 
   .how__list {
@@ -537,9 +545,11 @@
     margin-bottom: 50px;
   }
 
+
+
   .how__step {
-    padding-top: 334px;
-    min-height: 799px;
+    padding-top: 323px;
+    /* min-height: 799px; */
     flex-direction: column-reverse;
   }
 
@@ -556,10 +566,16 @@
     background-image: url(../img/how-1.jpg);
   }
 
+  .how__title_konsul {
+    margin: 0;
+    padding-bottom: 8px;
+  }
+
   .how__descr {
     min-width: 100%;
-    margin-right: 0;
-    margin-bottom: 23px;
+    margin: 0;
+    padding-bottom: 54px;
+    /* min-height: 400px; */
   }
 
   .how__button {
@@ -625,7 +641,7 @@
 @media (max-width: 576px) {
 
   .container {
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
   }
 
   .header {
@@ -662,6 +678,7 @@
     margin-bottom: 33px;
     font-size: 12px;
     line-height: 15px;
+    padding-right: 0;
   }
 
   .hero__button {
@@ -670,16 +687,26 @@
     line-height: 15px;
   }
 
-  .about__title {
+  .about__title_h2 {
     margin-bottom: 20px;
     font-size: 24px;
     line-height: 29px;
+    font-weight: 400;
   }
 
-  .about__descr {
+  .about__descr_text {
     margin-bottom: 14px;
     font-size: 14px;
     line-height: 28px;
+  }
+
+  .about__descr_osn {
+    margin-right: 0;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #000000;
   }
 
   .about__principles {
@@ -714,13 +741,6 @@
     align-items: flex-start;
   }
 
-  .about__content .about__descr {
-    margin-right: 0;
-    margin-bottom: 12px;
-    font-weight: 400;
-    color: #000000;
-  }
-
   .about__button {
     padding: 10px 41px;
     height: auto;
@@ -736,18 +756,24 @@
     height: auto;
     border: 0;
     background-size: 64px 58px;
-    background-position: top left;
+    background-position: top -4px left;
   }
 
   .about__item:not(:last-child) {
     margin-bottom: 0;
   }
 
-  .about__articles .about__title {
+  .about__title_h3 {
     margin-bottom: 4px;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .about__descr_kard {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
   }
 
   .main__how {
@@ -770,7 +796,13 @@
   }
 
   .how__list {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
+  }
+
+  .how__title_konsul {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
   }
 
   .how__item {
@@ -795,7 +827,14 @@
     border-radius: 16px;
   }
 
-  .how__content .how__title {
+  .how__title_3 {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .how__content {
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 18px;
@@ -803,14 +842,16 @@
   }
 
   .how__descr {
-    margin-bottom: 50px;
+    margin-bottom: 53px;
+    padding: 0;
+    font-weight: 400;
     font-size: 14px;
     line-height: 28px;
   }
 
   .how__button {
-    margin-right: 8px;
-    padding: 12px 43px;
+    margin-right: 4px;
+    padding: 12px 45px;
     font-size: 12px;
     line-height: 15px;
     border-radius: 8px;
@@ -1031,16 +1072,19 @@
   }
 
   .main__how {
-    padding-bottom: 44px;
+    padding-bottom: 37px;
   }
 
-  .how__content .how__title {
+  .how__title_3 {
+    margin-bottom: 7px;
+  }
+
+  .how__content {
     margin-bottom: 7px;
   }
 
   .how__descr {
     min-width: 91%;
-    margin-bottom: 53px;
   }
 
   .faq-title3 {
@@ -1083,7 +1127,7 @@
   }
 
   .form__button {
-    margin-right: 58px;
+    margin-right: 57px;
     margin-bottom: 0;
   }
 
