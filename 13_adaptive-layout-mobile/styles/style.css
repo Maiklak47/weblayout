@@ -58,7 +58,7 @@ body {
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 75px;
+  padding:0 75px;
 }
 
 /* header */
@@ -705,6 +705,7 @@ body {
 .footer__container {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .footer__logo {
@@ -723,7 +724,7 @@ body {
 
 .footer__links {
   margin-right: 221px;
-  width: 363px;
+  max-width: 363px;
 }
 
 .footer__nav {
@@ -789,7 +790,7 @@ body {
 }
 
 .footer__form {
-  margin-right: 220px;
+  margin-right: 108px;
   width: 570px;
 }
 
@@ -861,7 +862,7 @@ body {
   padding: 19px 52px;
   margin: 0 auto;
   position: relative;
-  left: 2px;
+  left: 1px;
   display: block;
   font-weight: 700;
   font-size: 16px;
