@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -7,6 +8,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+/* * {
+  outline: solid 1px red;
+} */
 
 @font-face {
   font-family: "Montserrat";
@@ -53,8 +58,7 @@ body {
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 56px 0 75px;
-  /* justify-content: space-between; */
+  padding:0 75px;
 }
 
 /* header */
@@ -68,6 +72,7 @@ body {
 }
 
 .header__container {
+  overflow:hidden;
   display: flex;
   font-size: 0;
   align-items: center;
@@ -82,8 +87,6 @@ body {
 }
 
 .header__nav {
-  /* padding: 25px 0px; */
-  max-width: 708px;
   margin-right: 260px;
 }
 
@@ -175,7 +178,7 @@ body {
   padding: 100px 12px 100px 81px;
   overflow: hidden;
   position: relative;
-
+  background-position: center;
   border-radius: 32px;
   background-image: url('../img/hero-1.jpg');
   background-size: cover;
@@ -239,16 +242,24 @@ body {
   padding-top: 51px;
 }
 
-.about__title {
-  margin: 0;
-  margin-bottom: 20px;
+.about__title_h2 {
   font-weight: 400;
   font-size: 48px;
   line-height: 59px;
+  margin-top: 0;
+  margin-bottom: 19px;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
   color: #000000;
 }
 
-.about__descr {
+.about__descr_text {
   margin: 0;
   margin-bottom: 50px;
   width: 70%;
@@ -258,9 +269,25 @@ body {
   color: #000000;
 }
 
+.about__descr_osn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+  padding-right: 101px;
+}
+
 .about__articles {
   display: flex;
   justify-content: space-between;
+}
+
+.about__descr_kard {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+  margin: 0;
 }
 
 .about__principles {
@@ -278,35 +305,29 @@ body {
   width: calc((100% - 32px) / 2);
 }
 
-.about__articles .about__descr {
+.abouut_ar {
   margin: 0;
   width: 100%;
-}
-
-.about__articles .about__title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-}
-
-.about__content {
-  display: flex;
-  padding: 50px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 32px;
-  align-items: center;
-}
-
-.about__content .about__descr {
   margin-right: 150px;
   font-weight: 700;
   color: #ffffff;
 }
 
-.about__item .about__title {
+.about__ti {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
   margin-bottom: 10px;
+}
+
+.about__content {
+  display: flex;
+  padding: 35px 52px 35px 51px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 32px;
+  align-items: center;
 }
 
 .about__button {
@@ -341,7 +362,7 @@ body {
 
 .about__item {
   position: relative;
-  padding: 64px 12px 74px 300px;
+  padding: 65px 85px 0px 298px;
   width: 100%;
   min-height: 295px;
   background: #ffffff;
@@ -351,6 +372,14 @@ body {
 
 .about__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.about__title_h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .about__one {
@@ -367,17 +396,13 @@ body {
 
 /* how */
 
-/* .main__how {
-  margin-bottom: 102px;
-} */
-
 .how {
   padding-top: 101px;
 }
 
 .how__title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
   font-weight: 400;
   font-size: 48px;
   line-height: 59px;
@@ -388,7 +413,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 57px;
+  margin-bottom: 23px;
   list-style: none;
 }
 
@@ -404,10 +429,13 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-/* .how__elem:not(:first-child){
-  margin-right: 86px;
-} */
-
+.how__title_konsul {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+  margin-bottom: 9px;
+}
 
 .how__elem:not(:last-child) {
   margin-right: 85px;
@@ -431,16 +459,17 @@ body {
 .how__step {
   display: none;
   position: relative;
-  width: 99%;
+  width: 100%;
   min-height: 468px;
 }
 
 .how__one::after {
   content: "";
   position: absolute;
+  top: 33px;
   left: 51%;
-  width: calc(100% / 2);
-  min-height: 98%;
+  width: calc(98% / 2);
+  min-height: 90%;
   background-image: url(../img/how-1.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -453,9 +482,6 @@ body {
 .how__content {
   width: calc(84% / 2);
   min-height: 100%;
-}
-
-.how__content .how__title {
   margin: 0;
   margin-bottom: 19px;
   font-weight: 700;
@@ -463,9 +489,17 @@ body {
   line-height: 10px;
 }
 
+.how__title_3 {
+  margin: 0;
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
 .how__descr {
-  overflow: hidden;
   margin-bottom: 16px;
+  margin-top: 0;
   max-width: 85%;
   font-weight: 400;
   font-size: 16px;
@@ -474,7 +508,7 @@ body {
 }
 
 .how__button {
-  padding: 20px 39px;
+  padding: 20px 38px;
   margin-right: 26px;
   font-weight: 700;
   font-size: 16px;
@@ -507,7 +541,7 @@ body {
 }
 
 .how__contract {
-  padding: 20px 38px;
+  padding: 20px 37px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -546,7 +580,7 @@ body {
 
 .main__faq {
   margin: 0;
-  padding-top: 99px;
+  padding-top: 91px;
   padding-bottom: 33px;
 }
 
@@ -665,11 +699,13 @@ body {
 .footer {
   background: #000000;
   padding-top: 115px;
+  padding-bottom: 15px;
 }
 
 .footer__container {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .footer__logo {
@@ -688,7 +724,7 @@ body {
 
 .footer__links {
   margin-right: 221px;
-  width: 363px;
+  max-width: 363px;
 }
 
 .footer__nav {
@@ -754,7 +790,7 @@ body {
 }
 
 .footer__form {
-  margin-right: 220px;
+  margin-right: 108px;
   width: 570px;
 }
 
@@ -791,7 +827,7 @@ body {
 
 .form__textarea {
   padding: 14px 0 104px 24px;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
   width: 100%;
   height: 150px;
   background: #414141;
@@ -826,7 +862,7 @@ body {
   padding: 19px 52px;
   margin: 0 auto;
   position: relative;
-  left: 2px;
+  left: 1px;
   display: block;
   font-weight: 700;
   font-size: 16px;
@@ -859,7 +895,7 @@ body {
   margin: 0;
   padding-top: 87px;
   padding-left: 0;
-  width: 363px;
+  max-width: 363px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
