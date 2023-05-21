@@ -1063,7 +1063,7 @@ body {
 
 .footer__form {
   margin-right: 108px;
-  width: 570px;
+  max-width: 570px;
 }
 
 .form__input {
