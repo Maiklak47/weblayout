@@ -3,10 +3,6 @@
     margin: 0;
   }
 
-  /* .swiper-text {
-    width: 73%;
-  } */
-
   .about__content {
     padding: 0 25px
   }
@@ -818,7 +814,7 @@
   .swiper-pagination-bullets.swiper-pagination-horizontal,
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
-    bottom: 12px;
+    bottom: -48px;
   }
 
   .swiper-pagination-bullet {
