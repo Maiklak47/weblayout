@@ -1,0 +1,517 @@
+
+@media(max-width: 1336px) {
+
+    /* Hero */
+
+    .hero__row {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .hero__image {
+        position: absolute;
+        right: 18px;
+        width: 365px;
+    }
+
+
+}
+
+@media(max-width: 1160px) {
+
+    /* Hero */
+    
+
+    .hero__title {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 100%;
+        margin-bottom: 17px;
+    }
+
+    .hero__subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    .hero__button {
+        padding: 15px 45.5px;
+    }
+
+    .hero__link {
+        display: block;
+    }
+
+    /* Advantages */
+
+    .advantage {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .advantages__image {
+        width: 211px;
+        height: 187px;
+        margin-left: 17px;
+        margin-top: 23px;
+    }
+
+}
+
+@media(max-width: 992px) {
+    /* Curators */
+
+    .curators__card {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    /* Header */
+
+    .header__row {
+        padding: 32px 15px 28px 15px;
+    }
+
+    /* Hero */
+
+    .hero__container {
+        padding-top: 117px;
+        padding-bottom: 120px;
+    }
+
+    .hero__button {
+        padding: 25px 76.5px;
+    }
+
+    .hero__image {
+        top: 126px;
+        right: 38px;
+    }
+    
+    .hero__info {
+        max-width: 47%;
+    }
+
+    /* Advantages */
+
+    .advantages {
+        padding-bottom: 60px;
+    }
+
+    .advantages__image {
+        margin-left: 0;
+        margin-right: 30px;
+        padding-left: 0;
+    }
+
+    .advantages__title {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .advantages__subtitle {
+        margin-bottom: 13px;
+        width: 100%;
+    }
+
+    .advantage__text {
+        margin: 0;
+        width: 102%;
+    }
+
+    .advantage__row {
+        margin-top: 10px;
+    }
+
+    /* Curators */
+
+    .curators__container-fluid {
+        padding-bottom: 37px;
+    }
+
+    .curators__title {
+        margin-bottom: 23px;
+    }
+
+    .curators__card  {
+        margin-bottom: 24px;
+    }
+
+    .curators__photo {
+        height: 180px;
+    }
+
+    .curators__name {
+        margin-top: 27px;
+    }
+
+    .curators__text {
+        width: 101%;
+    }
+
+    /* Courses */
+
+    .card__button {
+        margin-top: 30px;
+        padding: 20.5px 57px;
+    }
+
+    .card__duration {
+        right: 25px;
+    }
+    
+    .duration__image {
+        margin-right: 5px;
+    }
+}
+
+@media(max-width: 767px) {
+    
+    /* Header */
+
+    .header__row {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 30px 15px 13px 15px
+    }
+
+    .header__list {
+        padding: 27px 0 18px 0;
+    }
+
+    .header__row {
+        justify-content: center;
+    }
+    
+    /* Hero */
+
+    .hero__image {
+        display: none;
+    }
+
+    .hero__info {
+        max-width: 100%;
+    }
+    
+    /* Advantages */
+
+    .advantages__image {
+        width: 150px;
+        height: 134px;
+        margin: 0 14px 0 9px;
+    }
+}
+
+@media(max-width: 576px) {
+
+    .header__row {
+        display: block;
+        padding: 29px 35px 12px 35px;
+    }
+
+    .header__container-fluid {
+        -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+        align-items: inherit;
+    }
+
+    .header__logo {
+        text-align: center;
+    }
+
+    .header__nav {
+        overflow-y: auto;
+    }
+
+    .header__item:not(:last-child) {
+        margin-right: 56px;
+    }
+    
+    .header__list {
+        padding: 29px 0 17px 0;
+    }
+
+    /* Hero */
+
+    .hero__title {
+        margin-bottom: 15px;
+    }
+
+    .hero__subtitle {
+        width: 67%;
+    }
+
+    .hero__container {
+        padding-top: 66px;
+    }
+
+    /* Advantages */
+
+    .advantages {
+        padding-bottom: 42px;
+    }
+
+    .advantages__image {
+        margin: 0 30px 0 0px;
+    }
+
+    .advantage__text {
+        width: 109%;
+    }
+
+    /* Curators */
+    .curators__container-fluid {
+        padding-bottom: 32px;
+    }
+
+    .curators__card {
+        margin-bottom: 24px;
+    }
+
+    .curators__photo {
+        height: 180px;
+        border-radius: 43px 43px 0 0;
+    }
+
+    .curators__name {
+        margin-top: 28px;
+    }
+
+    .curators__text {
+        margin-top: 6px;
+    }
+
+    /* Courses */
+
+    .card__inner {
+        padding: 192px 22px 30px 30px;
+    }
+
+
+    .card__title {
+        line-height: 130%;
+    }
+
+    .card__text {
+        padding-right: 8px;
+    }
+
+    .card__button {
+        margin-top: 35px;
+        padding: 20.5px 49px;
+    }
+}
+
+@media(max-width:540px) {
+    .header__list {
+        padding: 23px 0 7px 0;
+    }
+
+    /* Hero */
+
+    .hero__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+        margin-bottom: 4px;
+    }
+
+    .hero__subtitle{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        margin-bottom: 44px;
+    }
+
+    .hero__button {
+        padding: 19.5px 30.5px;
+    }
+
+    .hero__link {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    /* Advantages */
+
+    .advantages__text {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .advantages__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .advantages__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .advantages {
+        padding-top: 50px;
+    }
+
+    .advantages__image {
+        display: none;
+    }
+
+    .advantages__title,
+    .advantages__subtitle {
+        margin: 0;
+    }
+
+    .advantage__text {
+        margin-top: 7px;
+    }
+
+    .advantage {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .advantage:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .advantages {
+        padding: 50px 0px 35px 0px;
+    }
+
+    .advantage__text {
+        margin: 0;
+        padding: 0;
+    }
+
+    .advantage:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    /* Curators */
+
+    .curators__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .curators__name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    .curators__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    /* Courses */
+
+    .courses__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+    }
+}
+
+@media(max-width: 320px) {
+    /* Header */
+
+    .header__row {
+        padding: 32px 0 0px 0px;
+    }
+
+    /* Advantages */
+
+    .advantage__row {
+        margin-top: 26px;
+    }
+
+    /* Hero */
+
+    .hero__container {
+        padding: 37px 0
+    }
+
+    .hero__subtitle {
+        width: 100%;
+        margin-bottom: 47px;
+    }
+
+    .hero__button {
+        padding: 19.5px 47.5px;
+    }
+
+
+    /* Curators */
+    .curators__container-fluid {
+        padding-top: 46px;
+        padding-bottom: 9px;
+    }
+
+    .curators__container {
+        padding: 0;
+    }
+
+    .curators__title {
+        margin-bottom: 26px;
+    }
+
+    .curators__card {
+        margin-bottom: 23px;
+    }
+
+    /* Courses */
+
+    .courses__container {
+        padding-top: 46px;
+        padding-bottom: 50px;
+    }
+
+    .courses__title {
+        margin-bottom: 27px;
+    }
+
+    .card__inner {
+        padding: 192px 40px 30px 30px;
+    }
+
+    .card__text {
+        padding-right: 0px;
+    }
+
+    .card__title {
+        margin-bottom: 8px;
+    }
+
+    .card__button {
+        margin: 0;
+        padding: 20.5px 56px;
+    }
+
+    .card:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .card__inner {
+        height: 653px;
+    }
+}
