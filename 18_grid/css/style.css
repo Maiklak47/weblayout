@@ -1,0 +1,481 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+
+/* global */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stop-scroll {
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Colors */
+
+:root {
+  --main-color: #3F2AFF;
+  --white-color: #FFFFFF;
+  --dark-color: #2E2B44;
+  --dark-color-2: #666666;
+  --dark-color-3: #212133;
+  --dark-color-4: #85859B;
+  --dark-color-5: #EDF0F9;
+
+  --hover: #0ad142;
+  --active: #a4d30b;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.link {
+  display: inline-block;
+  padding: 21px 59px;
+  border-radius: 20px;
+  font-weight: 700;
+  line-height: 19px;
+  color: var(--white-color);
+  background-color: var(--main-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.link:hover {
+  background-color: var(--hover);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.link:active {
+  background-color: var(--active);
+  transition: background-color 0.1s ease-in-out;
+}
+
+*:focus-visible {
+  outline: 1.5px solid var(--white-color);
+  outline-offset: 3px;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+
+/* Header */
+
+.header {
+  padding: 30px 0;
+  background-color: var(--main-color);
+}
+
+.header__logo {
+  margin-right: auto;
+  width: 94px;
+  height: 21px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo svg {
+  fill: var(--white-color);
+  width: 94px;
+  height: 21px;
+}
+
+.header__nav {
+  align-items: center;
+}
+
+.header__nav-list {
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--white-color);
+}
+
+.header__nav-item:not(:last-child) {
+  margin-right: 56px;
+}
+
+.header__nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+.header__nav-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: var(--white-color);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out, visibility 0s 0.3s;
+}
+
+.header__nav-link:hover.header__nav-link::after {
+  visibility: visible;
+  transform: scaleX(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* ---------------------- hero ---------------------- */
+
+.hero {
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+}
+
+.hero .row {
+  padding: 130px 0;
+  background-image: url("../img/background-hero-2.png");
+  background-size: 633px 593px;
+  background-repeat: no-repeat;
+  background-position: right 15px top 15px;
+}
+
+.hero__content {
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--white-color);
+}
+
+.hero__title {
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+}
+
+.hero__descr {
+  margin-bottom: 62px;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.hero .link {
+  padding: 24px 75px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
+/* ---------------------- advantage ---------------------- */
+
+.advantages {
+  padding: 80px 0;
+}
+
+.advantages__text {
+  flex-direction: column;
+  margin-bottom: 24px;
+  padding-left: 190px;
+  background-image: url("../img/advantage-row.png");
+  background-repeat: no-repeat;
+  background-size: 160px 142px;
+  background-position: left top 45%;
+}
+
+.advantages__title {
+  margin-bottom: 16px;
+  max-width: 73%;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: var(--dark-color);
+}
+
+.advantages__descr {
+  line-height: 150%;
+  color: var(--dark-color-2);
+}
+
+.advantages__list {
+  justify-content: space-between;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.advantages__list-item {
+  align-items: center;
+  padding-left: 125px;
+  min-height: 80px;
+  color: var(--dark-color-2);
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  background-position: left 15px center;
+}
+
+.advantages__list-item:nth-child(1) {
+  background-image: url("../img/advantage-card-1.png");
+}
+
+.advantages__list-item:nth-child(2) {
+  background-image: url("../img/advantage-card-2.png");
+}
+
+.advantages__list-item:nth-child(3) {
+  background-image: url("../img/advantage-card-3.png");
+}
+
+
+/* ---------------------- teacher ---------------------- */
+
+.teachers {
+  padding: 75px 0 73px;
+  color: var(--white-color);
+  background-color: var(--dark-color-3);
+}
+
+.teachers__title {
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+}
+
+.teachers__item {
+  font-size: 0;
+}
+
+.teachers__list li:last-child {
+  margin-bottom: 23px;
+}
+
+.teachers__item img {
+  margin-bottom: 30px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.teachers__item-name {
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.teachers__item-descr {
+  line-height: 150%;
+  font-size: 1rem;
+  color: var(--dark-color-4);
+}
+
+
+/* ---------------------- course ---------------------- */
+
+.courses {
+  padding: 74px 0 49px;
+  color: var(--dark-color-3);
+}
+
+.courses__title {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+}
+
+.courses__list {
+  justify-content: space-between;
+}
+
+.courses__list li {
+  position: relative;
+  display: flex;
+  font-size: 0;
+}
+
+.courses__item {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-basis: auto;
+  border-radius: 20px;
+  background-color: var(--dark-color-5);
+  overflow: hidden;
+}
+
+.courses__item::before {
+  position: absolute;
+  content: "";
+  top: 13px;
+  right: 20px;
+  padding-left: 29px;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--white-color);
+  background-image: url("../img/time-course.png");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: left center;
+}
+
+.courses__item:nth-child(1)::before {
+  content: "60 часов";
+}
+
+.courses__item:nth-child(2)::before {
+  content: "40 часов";
+}
+
+.courses__item:nth-child(3)::before {
+  content: "40 часов";
+}
+
+.courses__item:nth-child(4)::before {
+  content: "80 часов";
+}
+
+.courses__list li:nth-last-child(n+3) {
+  margin-bottom: 30px;
+}
+
+.courses__item-text {
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  flex-grow: 1;
+  padding: 30px 30px;
+  min-height: 300px;
+}
+
+
+
+.courses__item-caption {
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.courses__item-descr {
+  margin-bottom: 49px;
+  font-size: 1rem;
+  line-height: 150%;
+  color: var(--dark-color-2);
+}
+
+.courses__item .link {
+  margin-top: auto;
+  font-size: 16px;
+}
+
+.courses__item .link:focus-visible {
+  outline-color: var(--main-color);
+}
+
+
+/* ---------------------- footer ---------------------- */
+
+.footer__wrapper {
+  padding: 30px 0;
+  background-color: var(--dark-color);
+}
+
+.footer__list {
+  align-items: center;
+}
+
+.footer__item {
+  font-size: 0;
+}
+
+.footer__link {
+  display: inline-block;
+}
+
+.footer__link svg {
+  fill: var(--white-color);
+}
+
+.footer__link:hover.footer__link svg {
+  fill: var(--hover);
+  transition: fill 0.3s ease-in-out;
+}
+
+.footer__link:active.footer__link svg {
+  fill: var(--active);
+  transition: fill 0.1s ease-in-out;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.footer__trademark {
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
+
+.footer__trademark a {
+  color: var(--main-color);
+}
+
+.footer__trademark a:focus-visible {
+  outline-color: var(--main-color);
+}
